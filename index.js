@@ -1,4 +1,4 @@
-const apiKey = "d1e7c51b"; // Sizning API kalitingiz
+const apiKey = "d1e7c51b"; 
 
         async function searchByTitle() {
             const title = document.getElementById("title").value.trim().replace(" ", "+");
@@ -16,7 +16,6 @@ const apiKey = "d1e7c51b"; // Sizning API kalitingiz
             try {
                 const response = await fetch(url);
                 const data = await response.text();
-                // XML yoki JSON ni to'g'ri ko'rsatish uchun matnni tekshirish
                 if (responseFormat === "xml" && !data.includes("<?xml")) {
                     resultDiv.innerHTML = `<div class="url">Talab: ${url}</div><div class="error">Javob: {"Javob":"False","Xato":"XML formatida ma'lumot topilmadi."}</div>`;
                     return;
@@ -47,7 +46,6 @@ const apiKey = "d1e7c51b"; // Sizning API kalitingiz
             try {
                 const response = await fetch(url);
                 const data = await response.text();
-                // XML yoki JSON ni to'g'ri ko'rsatish uchun matnni tekshirish
                 if (responseFormat === "xml" && !data.includes("<?xml")) {
                     resultDiv.innerHTML = `<div class="url">Talab: ${url}</div><div class="error">Javob: {"Javob":"False","Xato":"XML formatida ma'lumot topilmadi."}</div>`;
                     return;
