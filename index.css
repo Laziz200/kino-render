@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; margin: 20px; }
+        .form-group { margin-bottom: 20px; padding: 10px; border: 1px solid #ddd; }
+        label { font-weight: bold; }
+        input, select { margin-right: 10px; padding: 5px; }
+        button { padding: 5px 10px; background-color: #007BFF; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        #result { margin-top: 10px; padding: 10px; border: 1px solid #ddd; }
+        .error { background-color: #d4edda; color: #155724; padding: 10px; }
+        .url { word-break: break-all; }
